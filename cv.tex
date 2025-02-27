@@ -1,0 +1,143 @@
+%-------------------------
+% Auteur : Radhwen Saidi
+%------------------------
+
+\documentclass[10pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{array}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.65in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{Black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item
+    \begin{tabularx}{\textwidth}[t]{X r}
+      \textbf{#1} & \textit{\small#2} \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1 :} #2}}
+
+\newcommand{\resumeKeywords}[1]{\item\small{\textbf{\textcolor{MidnightBlue}{Technologies :}} \textit{#1}}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\setlength\itemsep{0pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabularx}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\LARGE Radhwen Saidi} & \href{mailto:radhwen.saidi@outlook.com}{radhwen.saidi@outlook.com} \\
+  \textbf{\large \textcolor{MidnightBlue}{Data Scientist | Machine Learning Engineer}} & Mobile: +33 7 83 90 61 17 \\
+  \href{https://www.linkedin.com/in/radhwen-saidi/}{LinkedIn: linkedin.com/in/radhwen-saidi} & Lille, France \\
+\end{tabularx}
+
+%-----------EDUCATION-----------------
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mastère Spécialisé Expert En Sciences Des Données}{2022 -- 2023}
+      {INSA Rouen Normandie}{Rouen, France}
+    \resumeSubheading
+      {Diplôme d'ingénieur en Informatique}{2020 -- 2022}
+      {ENSIM (École Nationale Supérieure d'Ingénieurs du Mans)}{Le Mans, France}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Expériences Professionnelles}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Scientist}{Depuis Oct. 2023}
+      {ONEY BANQUE}{Lille, France}
+      \resumeItemListStart
+        \resumeItem{Modélisation Machine Learning}
+          {Développement de solutions ML supervisées et non supervisées adaptées à divers cas métier (détection de fraude, recouvrement, segmentation client, scoring crédit), intégrant les dernières avancées technologiques.}
+        \resumeItem{Développement d'Applications Analytiques}
+          {Conception d'outils automatisés pour l'analyse des données, la génération de rapports détaillés, le monitoring des modèles, ainsi que la mise en place d'alertes proactives et de plans d'action correctifs.}
+        \resumeItem{Amélioration continue}
+          {Optimisation des modèles existants pour renforcer leur robustesse, performance et adaptabilité.}
+        \resumeItem{Expertise ML référent}
+          {Mise en œuvre de bonnes pratiques et guides méthodologiques, soutenus par une veille technologique, pour optimiser robustesse et alignement des filiales internationales.}
+        \resumeKeywords{Python • R • SQL • Machine Learning • Databricks • MLflow • Evidently AI • PySpark • Snowflake}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Scientist}{Oct. 2022 -- Sept. 2023}
+      {Crédit Agricole Consumer Finance}{Lille, France}
+      \resumeItemListStart
+        \resumeItem{Projet NLP -- Catégorisation de transactions bancaires}
+          {Mise en place d’un pipeline complet : \textbf{Système d’annotation intelligent} (scores majoritaires, règles métier, gestion de priorités) associé à une \textit{analyse sémantique via t-SNE} pour détecter et corriger les incohérences, \textbf{prétraitement avancé} (Regex, corrections orthographiques) et \textbf{modèle BERT personnalisé} (fine-tuning sur corpus bancaire) déployé via un pipeline d’inférence scalable, assurant une catégorisation fiable et robuste.}
+        \resumeKeywords{Python • Regex • Snorkel • Hugging Face • Transformers (BERT) • TensorFlow • t-SNE}
+        \resumeItem{Projet Open Banking -- Système de scoring de crédit}
+          {Intégration de données APIs et internes, optimisation avancée et sélection d’indicateurs clés ; conception d’un modèle XGBoost, suivi via MLflow et explicabilité stratégique avec SHAP.}
+        \resumeKeywords{Python • Machine Learning • MLflow • SQL • APIs • SHAP}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Stage de fin d'études – Data Scientist/Machine Learning Engineer}{Mars 2022 -- Sept. 2022}
+      {E-nno Switzerland SA}{Genève, Suisse}
+      \resumeItemListStart
+        \resumeItem{Détection d'anomalies énergétiques}
+          {Développement d'un modèle innovant pour identifier les dysfonctionnements techniques et problèmes de qualité des données.}
+        \resumeItem{Pipeline ETL et ingestion cloud}
+          {Extraction, transformation et chargement des données issues des capteurs avec intégration sur AWS, optimisant ainsi les flux de données.}
+        \resumeItem{Automatisation et déploiement}
+          {Packaging via Poetry, déploiement automatisé (Docker, GitLab CI/CD) et orchestration avec Airflow et Kubernetes.}
+        \resumeItem{Surveillance proactive}
+          {Mise en place d'alertes et dashboards (Grafana) pour un monitoring continu des performances.}
+        \resumeKeywords{Python • PostgreSQL • InfluxDB • Poetry • Airflow • Docker • AWS • CLI • GitLab • CI/CD • Kubernetes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Stage Data Science}{Juil. 2021 -- Sept. 2021}
+      {Teamwill Consulting}{Paris, France}
+      \resumeItemListStart
+        \resumeItem{Modélisation prédictive pour CrowdFunding}
+          {Conception d'un modèle Machine Learning prédictif enrichi par une analyse NLP sur des tweets collectés via WebScraping, visant à prédire le succès ou l'échec d'un projet de crowdfunding.}
+        \resumeItem{Chatbot intelligent}
+          {Développement d'un chatbot conversationnel basé sur des réseaux de neurones, intégré à la plateforme pour fournir des informations sur les projets de crowdfunding.}
+        \resumeItem{Développement et déploiement de l'application Flask}
+          {Création d'une application web Flask intégrant le modèle prédictif, l'analyse de sentiment et le chatbot, suivie du déploiement sur AWS via EC2.}
+        \resumeKeywords{Python • Scikit-Learn • Flask • WebScraping • SQL • AWS EC2 • NLP • Keras • Analyse de Sentiment • Chatbot}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Compétences Techniques}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Langages et Frameworks :} Python, R, Flask, Java, C\#.
+  \item \textbf{Machine Learning et IA :} Scikit-learn, PyTorch, TensorFlow, NLP, LLMs (LangChain, LangGraph, RAG, Fine-tuning).
+  \item \textbf{Big Data et Cloud :} Spark/PySpark, SQL/NoSQL, AWS (EC2, S3, ECR, SageMaker), Heroku, Snowflake, Databricks.
+  \item \textbf{MLOps et Déploiement :} Docker, Airflow, MLflow, CI/CD, GitHub/GitLab, Streamlit, FastAPI, Poetry, Grafana.
+\end{itemize}
+
+%-----------LANGUES ET CERTIFICATIONS-----------------
+\section{Langues et Certifications}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Langues :} Français (Courant), Anglais (Professionnel, TOEIC : 865), Allemand (A2).
+  \item \textbf{Certifications :} Machine Learning Scientist (DataCamp), Deep Learning Specialization (Coursera), Project Management (IBMI).
+\end{itemize}
+
+\end{document}
